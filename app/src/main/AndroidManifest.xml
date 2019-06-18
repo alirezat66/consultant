@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="greencode.ir.consulant">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:name=".controler.AppController"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".calling.CallScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".calling.IncomingCallScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".main.DeptorActivity"></activity>
+        <activity android:name=".PreSplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".main.PhotoActivity"></activity>
+        <activity android:name=".main.MainActivity"></activity>
+        <activity android:name=".signin.SignInActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" ></activity>
+        <activity android:name=".signin.VerificationActivity"></activity>
+        <activity android:name=".addinfo.AddressActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"   ></activity>
+        <activity android:name=".addinfo.AddDocumentActivity"></activity>
+        <activity android:name=".addinfo.TimeActivity"></activity>
+        <activity android:name=".addinfo.WaitedPage"></activity>
+        <activity android:name=".requests.RequestAcceptedActivity"></activity>
+        <activity android:name=".requests.RequestDetailActivity"></activity>
+        <activity android:name=".offers.OfferActivity"></activity>
+        <activity android:name=".addinfo.ProfileAddInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            ></activity>
+        <activity android:name=".requests.RequestActivity"></activity>
+        <activity android:name=".offers.AdviceViewActivity"></activity>
+
+        <service android:name=".services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+         <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="568362c655e87474e6fc33806ea747b8bf6c6542" />
+        <service android:name=".services.SinchService"></service>
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>

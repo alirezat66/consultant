@@ -1,0 +1,53 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="right"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مشاوره شرکت و برند"
+            android:id="@+id/txt_title"
+            android:textSize="18sp"
+            android:textColor="#FF5D5D5D"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="صدور حکم ورشکستگی"
+            android:layout_marginTop="8dp"
+            android:id="@+id/txt_sub_title"
+            android:textColor="#FFB0B0B0"
+            android:textSize="14sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تاریخ ثبت"
+            android:textSize="18sp"
+            android:id="@+id/txt_date"
+            android:textColor="#FF607D8B"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="امروز"
+            android:id="@+id/txt_time"
+            android:textColor="#FF607D8B"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/empty_layout"
+        android:visibility="gone">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/emty_request_list"
+        android:layout_marginTop="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:text="درخواست مشاوره جدیدی وجود ندارد"
+            android:textColor="#FF333333"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF5D5D5D"
+            android:gravity="center"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:text="برای افزایش تعداد مشاوره های پیشنهادی به شمااطلاعات شغلی و فردی خود را بروز نگاه دارید"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="بررسی اطلاعات شغلی"
+            android:paddingRight="16dp"
+
+            android:paddingLeft="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_blue"
+        />
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="بازگشت به صفحه اصلی"
+        android:textSize="16sp"
+            android:layout_marginTop="8dp"
+        android:textColor="@color/blueBack"
+        android:background="@color/transparent"
+        />
+    </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_layout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layoutDirection="rtl"
+            android:layout_alignParentTop="true"
+            android:id="@+id/tool_bar"
+            android:background="@color/blueBack"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:text="مشاوره های من"
+                android:layout_marginRight="16dp"
+                />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list"
+            android:layout_below="@+id/tool_bar"
+            android:layout_above="@+id/btn_back"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:background="#FF607D8B"
+            android:text="بازگشت به صفحه اصلی"
+            android:id="@+id/btn_back"/>
+    </RelativeLayout>
+</RelativeLayout>

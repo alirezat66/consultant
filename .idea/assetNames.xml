@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="assetNames">
+    <option name="mapping">
+      <map>
+        <entry key="active_camera" value="ic_camera_camera" />
+        <entry key="bg-1" value="bg_1" />
+        <entry key="bg-2" value="bg_2" />
+        <entry key="bg-3" value="bg_3" />
+        <entry key="cancel" value="ic_camera_cancel" />
+        <entry key="emty_request_list_1_2" value="emty_request" />
+        <entry key="main_img" value="accept_request" />
+        <entry key="payment_successful_copy" value="payment_successful" />
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    >
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer"
+        android:id="@+id/list"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl"
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#448AFF"
+            android:text="مرحله قبل"
+            android:id="@+id/btn_perivious"
+            android:textColor="@color/white"
+            android:layout_height="match_parent" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:text="ذخیره موقت و خروج"
+            android:id="@+id/btn_save"
+            android:textColor="@color/white"
+            android:background="#607D8B"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#448AFF"
+            android:text="ذخیره نهایی"
+            android:id="@+id/btn_next"
+            android:textColor="@color/white"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

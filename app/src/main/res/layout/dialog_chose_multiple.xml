@@ -1,0 +1,50 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/header"
+        app:cardElevation="1dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:textColor="#6c6c6c"
+                android:id="@+id/txt_title"
+                android:text="انتخاب حیطه های تخصص"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_blue_rounnd"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white"
+                android:text="ذخیره"
+                android:id="@+id/btn_accept"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16.0dp"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_alignParentStart="true"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

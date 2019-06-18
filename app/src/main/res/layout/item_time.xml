@@ -1,0 +1,52 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginBottom="1dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF6C6C6C"
+        android:textSize="20sp"
+        android:text="شنبه"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:id="@+id/txt_day"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:weightSum="3"
+        android:layoutDirection="rtl"
+        android:layout_below="@id/txt_day">
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:textColor="#FF6C6C6C"
+             android:textSize="18sp"
+             android:text="نوبت اول"
+             android:gravity="center_horizontal"
+
+             android:id="@+id/txt_shift_one"
+             android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FF6C6C6C"
+            android:textSize="18sp"
+            android:text="نوبت دوم"
+            android:gravity="center_horizontal"
+
+            android:id="@+id/txt_shift_two"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FF6C6C6C"
+            android:id="@+id/txt_shift_three"
+            android:text="نوبت سوم"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

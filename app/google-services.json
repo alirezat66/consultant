@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "130909317943",
+    "firebase_url": "https://consulantasanproject.firebaseio.com",
+    "project_id": "consulantasanproject",
+    "storage_bucket": "consulantasanproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130909317943:android:bd9c5a61390615d9",
+        "android_client_info": {
+          "package_name": "greencode.ir.consulant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130909317943-sj6ps33500dpqvjhmjb394ip3svdlcqr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "greencode.ir.consulant",
+            "certificate_hash": "cbc6be4d2a570976f217edfe74cd692e0c5dc7fc"
+          }
+        },
+        {
+          "client_id": "130909317943-cchmemvjff0tnct2k7ot73abtti6l0kr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvbcDFJCm0QUV_mU3IeV2GBkxvygmtR38"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "130909317943-cchmemvjff0tnct2k7ot73abtti6l0kr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

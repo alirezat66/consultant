@@ -1,0 +1,52 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="عنوان مدرک"
+        android:id="@+id/edt_title"
+        android:textColorHint="@color/gray_dark"
+        android:textSize="18sp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="توضیحات"
+        android:id="@+id/edt_desc"
+        android:textColorHint="@color/gray_dark"
+        android:textSize="18sp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_save"
+            android:layout_alignParentLeft="true"
+            android:background="@color/transparent"
+            android:textColor="#FF607D8B"
+            android:textSize="14sp"
+            android:text="ذخیره و آپلود مدرک"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:textColor="#FF607D8B"
+            android:layout_toRightOf="@id/btn_save"
+            android:id="@+id/btn_cancel"
+            android:background="@color/transparent"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"
+            android:text="انصراف"/>
+    </RelativeLayout>
+</LinearLayout>

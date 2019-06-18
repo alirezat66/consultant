@@ -1,0 +1,72 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+        <ImageView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-30dp"
+            android:src="@drawable/payment_successful"
+            android:layout_alignParentTop="true"
+            android:id="@+id/img_top"
+           />
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_top"
+        android:layout_marginTop="-50dp"
+        android:orientation="vertical">
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="موافقت شما را به کاربر اطلاع دادیم!"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="#FF333333"
+            android:gravity="center"
+            />
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="بزودی تصمیم نهایی کاربر را به شما اطلاع می دهیم "
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#FF5D5D5D"
+            android:layout_marginTop="4dp"/>
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="در صورت موافقت کاربر، ساعت انتخابی و همچنین مدت
+زمان مشاوره مد نظر ایشان را به شما
+اطلاع خواهیم داد"
+
+            android:textSize="12sp"
+            android:textColor="#FF777777"
+            android:gravity="center"
+            android:layout_marginTop="4dp">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:gravity="center">
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_blue"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:id="@+id/btn_ok"
+            android:paddingRight="24sp"
+            android:paddingLeft="24sp"
+            android:text="متوجه شدم"/>
+        <Button android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_call"
+            android:textColor="@color/blueBack"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:text="تماس با پشتیبانی" />
+    </LinearLayout>
+
+
+</RelativeLayout>

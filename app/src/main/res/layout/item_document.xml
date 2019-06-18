@@ -1,0 +1,53 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="2dp"
+    android:padding="8dp"
+    android:layoutDirection="rtl"
+    android:id="@+id/rl_doc"
+    android:background="@color/white"
+    android:layout_marginBottom="1dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="سند خانه"
+        android:id="@+id/txt_name"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:textColor="@color/gray_key"
+        android:textSize="18sp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/view_icon"
+        android:id="@+id/img_view"
+        android:padding="16dp"
+       />
+        <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delete_icon"
+        android:id="@+id/img_delete"
+            android:visibility="visible"
+        android:padding="16dp"
+       />
+    </LinearLayout>
+</RelativeLayout>

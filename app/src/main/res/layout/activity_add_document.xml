@@ -1,0 +1,75 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:textColor="#FF6C6C6C"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="ثبت مدارک و دوره های مرتبط"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="26dp"
+        android:background="@color/blueBack"
+        android:textColor="@color/white"
+        android:id="@+id/btn_add"
+        android:textSize="16sp"
+        android:text="افزودن مدرک جدید"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list"
+            android:layout_above="@id/footer"></android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/footer"
+            android:layout_marginBottom="12dp"
+            android:layoutDirection="rtl"
+            android:weightSum="2"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50.0dp"
+
+                android:paddingRight="16dp"
+                android:layout_marginLeft="16dp"
+
+                android:id="@+id/btnSave"
+                android:paddingLeft="12dp"
+                android:background="@drawable/ripple_blue_rounnd"
+                android:textColor="@color/white"
+                android:text="ذخیره مدارک"
+                android:textSize="16sp"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentRight="true" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50.0dp"
+
+                android:paddingRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/btnBack"
+                android:paddingLeft="12dp"
+                android:background="@color/transparent"
+                android:textColor="@color/blueBack"
+                android:text="بازگشت"
+                android:textSize="16sp"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentRight="true" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
